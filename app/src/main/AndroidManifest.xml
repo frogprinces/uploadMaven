@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools" package="com.example.zhaoshuai.mydemocollection"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="linkedme.sdk.key"
+            android:value="48741bf5b3bc3e8b07439ffe58212c39" />
+
+        <activity
+            android:name=".glide.GlideActivity"
+            android:label="示例工程">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+            <intent-filter>
+                <!-- 此处scheme值需要替换为后台设置中的scheme值 -->
+                <!-- host禁止更改！！！ -->
+                <!-- 禁止配置其他属性 -->
+                <data android:scheme="linkedmedemo"
+                      android:host="linkedme" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+
+            <!-- APP Links方式,Android 23版本及以后支持 -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 以下pathPrefix值需要替换为后台设置中 App ID 的值-->
+                <!-- host中设置的lkme.cc不要更改！！！-->
+                <data
+                    android:host="lkme.cc"
+                    android:pathPrefix="/fHD"
+                    android:scheme="https" />
+                <data
+                    android:host="lkme.cc"
+                    android:pathPrefix="/fHD"
+                    android:scheme="http" />
+            </intent-filter>
+
+
+
+
+        </activity>
+        <activity android:name=".RoundProgressActivity">
+        </activity>
+
+        <activity android:name=".scroll.TimeDepositActivity"/>
+        <activity android:name=".album.CutPictureActivity"/>
+        <activity android:name=".com.zhy.clippic.MainActivity" android:theme="@style/AppTheme"/>
+        <activity android:name=".com.zhy.clippic.ShowImageActivity"
+                  android:theme="@style/AppTheme"/>
+
+        <activity
+            android:theme="@style/Widget.CropImageView"
+            android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:name=".animation.GameActivity"/>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.zhaoshuai.mydemocollection"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+
+        </provider>
+    </application>
+
+</manifest>

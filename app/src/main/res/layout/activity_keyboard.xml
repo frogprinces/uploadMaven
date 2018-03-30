@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_user_name"
+        style="@style/brand_comment_addition_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入内容"
+        android:maxLength="10"/>
+
+
+    <Button
+        android:id="@+id/btn_show_number_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="弹出"
+        android:textColor="@color/color_333333"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_hide_number_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show_number_keyboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="隐藏"
+        android:textColor="@color/color_333333"
+        android:textSize="18sp"/>
+
+
+    <com.example.zhaoshuai.mydemocollection.keyboard.NumberKeyboardView
+        android:id="@+id/number_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+    </com.example.zhaoshuai.mydemocollection.keyboard.NumberKeyboardView>
+
+
+    <EditText
+        android:layout_above="@+id/et_pwd"
+        style="@style/brand_comment_addition_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入内容"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/brand_comment_addition_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:hint="请输入内容"
+        android:maxLength="10"/>
+
+</RelativeLayout>
