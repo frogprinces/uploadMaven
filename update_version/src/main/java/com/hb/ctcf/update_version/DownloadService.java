@@ -1,10 +1,9 @@
-package com.yitoudai.update;
+package com.hb.ctcf.update_version;
 
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.ResultReceiver;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
 import java.io.FileOutputStream;
@@ -29,7 +28,7 @@ public class DownloadService extends IntentService {
     }
 
     @Override
-    protected void onHandleIntent(@Nullable Intent intent) {
+    protected void onHandleIntent(Intent intent) {
         if(intent == null){
             return;
         }

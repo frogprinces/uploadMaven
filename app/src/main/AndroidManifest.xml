@@ -21,7 +21,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:theme,android:icon, android:label">
         <meta-data
             android:name="linkedme.sdk.key"
             android:value="48741bf5b3bc3e8b07439ffe58212c39" />

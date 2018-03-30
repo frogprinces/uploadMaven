@@ -249,6 +249,7 @@ public class GlideActivity extends AppCompatActivity implements EasyPermissions.
                 }
             }
         });
+
     }
 
 }

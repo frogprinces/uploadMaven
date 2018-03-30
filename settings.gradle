@@ -1,1 +1,1 @@
-include ':app', ':JPush', ':version_update'
+include ':app', ':update_version'

@@ -1,4 +1,4 @@
-package com.yitoudai.update;
+package com.hb.ctcf.update_version;
 
 /**
  * Created by zs on 2018/2/2.

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JPush/JPush.iml" filepath="$PROJECT_DIR$/JPush/JPush.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyDemoCollection.iml" filepath="$PROJECT_DIR$/MyDemoCollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/version_update/version_update.iml" filepath="$PROJECT_DIR$/version_update/version_update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update_version/update_version.iml" filepath="$PROJECT_DIR$/update_version/update_version.iml" />
     </modules>
   </component>
 </project>

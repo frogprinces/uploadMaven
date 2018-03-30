@@ -1,4 +1,4 @@
-package com.yitoudai.update;
+package com.hb.ctcf.update_version;
 
 import android.content.Context;
 
